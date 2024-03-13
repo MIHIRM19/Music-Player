@@ -164,64 +164,12 @@ class MainActivity : AppCompatActivity() {
         search = false
         val musicList = ArrayList<String>()
         MusicListMA = getAllAudio()
-        //MusicListMA = fetchSongsFromApi()
         binding.musicRV.setHasFixedSize(true)
         binding.musicRV.setItemViewCacheSize(13)
         binding.musicRV.layoutManager = LinearLayoutManager(this@MainActivity)
         musicAdapter = MusicAdapter(this@MainActivity, MusicListMA)
         binding.musicRV.adapter = musicAdapter
     }
-
-//    private fun fetchSongsFromApi(): ArrayList<Music> {
-//        val tempList = ArrayList<Music>()
-//        val retrofit = Retrofit.Builder()
-//            .baseUrl("https://cms.samespace.com/")
-//            .addConverterFactory(GsonConverterFactory.create())
-//            .build()
-//
-//        val apiService = retrofit.create(ApiService::class.java)
-//        val call = apiService.getSongs()
-//
-//        call.enqueue(object : Callback<List<Song>> {
-//            override fun onResponse(call: Call<List<Song>>, response: Response<List<Song>>) {
-//                if (response.isSuccessful) {
-//                    val songsFromApi = response.body()
-//                    // Handle the list of songs received from the API
-//                    // Here you can process the list of songs received from the API
-//                    // For example, you can add them to your existing MusicListMA
-//                    songsFromApi?.let {
-//                        val musicListFromApi = ArrayList<Music>()
-//                        for (song in it) {
-//                            val music = Music(
-//                                id = song.id.toString(),
-//                                title = song.title,
-//                                album = song.album,
-//                                artist = song.artist,
-//                                path = song.path,
-//                                duration = song.duration,
-//                                artUri = song.artUri
-//                            )
-//                            musicListFromApi.add(music)
-//                        }
-//                        // Add the songs from API to your existing list or replace it entirely
-//                        // For example:
-//                        // MusicListMA.addAll(musicListFromApi)
-//                        // Then, update your RecyclerView adapter
-//                        // musicAdapter.notifyDataSetChanged()
-//                    }
-//                } else {
-//                    // Handle API call failure
-//                    Toast.makeText(this@MainActivity, "Failed to fetch songs", Toast.LENGTH_SHORT).show()
-//                }
-//            }
-//
-//            override fun onFailure(call: Call<List<Song>>, t: Throwable) {
-//                // Handle network failures
-//                Toast.makeText(this@MainActivity, "Network Error: ${t.message}", Toast.LENGTH_SHORT).show()
-//            }
-//        })
-//        return tempList
-//    }
 
     @SuppressLint("Range")
     private fun getAllAudio(): ArrayList<Music>{
