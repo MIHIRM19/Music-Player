@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/topTracks"
+        android:title="Top Tracks"
+        android:icon="@drawable/dotted"/>
+
+    <item android:id="@+id/forYou"
+        android:title="For you"
+        android:icon="@drawable/dotted"/>
+</menu>

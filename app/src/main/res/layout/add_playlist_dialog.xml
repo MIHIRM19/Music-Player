@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/gray"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="10dp"
+        app:startIconDrawable="@drawable/list_play"
+        app:startIconTint="@color/gray"
+        android:hint="Playlist Name"
+        app:hintTextAppearance="@style/MyTextInputLayoutHint"
+        app:helperTextTextColor="@color/white"
+        app:placeholderTextColor="@color/white"
+        app:cursorColor="@color/gray"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:textColorHint="@color/gray">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/playlistName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:paddingStart="50dp"
+            android:inputType="text"
+            android:maxLength="40"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/gray"
+        android:layout_marginHorizontal="16dp"
+        app:hintTextAppearance="@style/MyTextInputLayoutHint"
+        android:layout_marginTop="10dp"
+        app:startIconDrawable="@drawable/list_play"
+        app:startIconTint="@color/gray"
+        app:placeholderTextColor="@color/white"
+        android:hint="Your Name"
+        app:cursorColor="@color/gray"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:textColorHint="@color/gray">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/yourName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:paddingStart="50dp"
+            android:inputType="text"
+            android:maxLength="40"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

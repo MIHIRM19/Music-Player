@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#181817"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/min_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/timer"
+            app:tint="@color/gray"
+            android:contentDescription="15 minutes"
+            android:layout_margin="8dp"/>
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="15 minutes"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/gray"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:gravity="start|center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/min_30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/timer"
+            app:tint="@color/gray"
+            android:contentDescription="30 minutes"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="30 minutes"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textColor="@color/gray"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:gravity="start|center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/min_60"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/timer"
+            app:tint="@color/gray"
+            android:contentDescription="60 minutes"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="60 minutes"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textColor="@color/gray"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:gravity="start|center"/>
+
+    </LinearLayout>
+
+</LinearLayout>

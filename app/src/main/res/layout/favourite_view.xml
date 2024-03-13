@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/cover_back"
+    android:layout_margin="8dp"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/songImgFV"
+        android:layout_width="70dp"
+        app:shapeAppearanceOverlay="@style/curved"
+        android:src="@drawable/cover"
+        android:contentDescription="Song Image"
+        android:layout_height="70dp"/>
+
+    <TextView
+        android:id="@+id/songNameFV"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/white"
+        android:text="Starboy Music"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"/>
+
+</LinearLayout>
